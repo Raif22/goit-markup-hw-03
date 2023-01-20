@@ -86,7 +86,7 @@ body {
 /* блок герой */
 
 .hero {
-  text-align: center;
+ 
   background: #2f303a;
 }
 
@@ -115,6 +115,10 @@ body {
   color: #ffffff;
 
   cursor: pointer;
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+  
 }
 
 /* чим займаємося наші переваги */
