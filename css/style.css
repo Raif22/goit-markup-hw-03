@@ -3,11 +3,14 @@ body {
   font-style: normal;
 
   color: #212121;
-  
 }
 
-:root{
+:root {
   --accent-color: #2196f3;
+  --secondary-accent-color: #f5f4fa;
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --background-footer-color: #2f303a;
 }
 /* header  */
 
@@ -17,7 +20,7 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.19;
 
   letter-spacing: 0.03em;
 
@@ -29,7 +32,7 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.19;
 
   letter-spacing: 0.03em;
   color: #000000;
@@ -37,54 +40,45 @@ body {
 }
 /* навігація */
 .nav-list-link {
-  
-  top: 32px;
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
- 
+
   color: #212121;
   text-decoration: none;
 }
 
-
-.active-page{
-   color:var(--accent-color)
+.active-page {
+  color: var(--accent-color);
 }
 
-.nav-list-link:active{
-  color:var(--accent-color)
+.nav-list-link:active {
+  color: var(--accent-color);
 }
 .nav-list-link:hover {
-  color:var(--accent-color)
+  color: var(--accent-color);
 }
-.nav-list-link:focus{
-   color:var(--accent-color)
+.nav-list-link:focus {
+  color: var(--accent-color);
 }
-
-
-
 
 /* адреса в шапці*/
 
 .contact-list-link {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
 
-  color: #212121;
+  color: #757575;
+  text-decoration: none;
 }
 .contact-list-link:hover {
-  color:var(--accent-color)
+  color: var(--accent-color);
 }
 .contact-list-link:focus {
-  color:var(--accent-color)
+  color: var(--accent-color);
 }
 
 /* MAIN */
@@ -92,26 +86,14 @@ body {
 /* блок герой */
 
 .hero {
-  width: 1600px;
-  height: 600px;
-  left: 0px;
-  top: 80px;
-
+  text-align: center;
   background: #2f303a;
 }
 
 .hero-text {
-  position: absolute;
-  width: 696px;
-  height: 120px;
-  left: 452px;
-  top: 280px;
-
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
+  line-height: 1.36;
 
   text-align: center;
   letter-spacing: 0.06em;
@@ -121,23 +103,13 @@ body {
 }
 /* кнопка Замовити послугу */
 .hero-button {
-  position: absolute;
-  width: 216px;
-  height: 50px;
-  left: 692px;
-  top: 430px;
-
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  font-family: "Roboto";
-  font-style: normal;
+
   font-weight: 700;
   font-size: 16px;
-  line-height: 30px;
-
-  align-items: center;
-  text-align: center;
+  line-height: 1.9;
   letter-spacing: 0.06em;
 
   color: #ffffff;
@@ -147,35 +119,27 @@ body {
 
 /* чим займаємося наші переваги */
 .preference-list {
-  font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
   color: #212121;
 }
 .preference-list-text {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.7;
   letter-spacing: 0.03em;
   color: #757575;
 }
-.discribe {
-  left: 215px;
-  top: 966px;
-}
+
 .discribe-item {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  line-height: 42px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
 
@@ -188,61 +152,57 @@ body {
 }
 
 .team-members {
-  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
 }
 
 .team-members-text {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--secondary-text-color);
 }
 
 /* Footer */
 .contact-adress-link {
-  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.7;
 
   letter-spacing: 0.03em;
 
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
 }
 .contact-adress-link:hover {
-  color:var(--accent-color)
+  color: var(--accent-color);
 }
 .contact-adress-link:focus {
-  color:var(--accent-color)
+  color: var(--accent-color);
 }
 .adress {
-  font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.7;
 
   letter-spacing: 0.03em;
 
   color: #ffffff;
 }
 .adress:hover {
-  color:var(--accent-color)
+  color: var(--accent-color);
 }
 .adress:focus {
-  color:var(--accent-color)
+  color: var(--accent-color);
 }
 
 .logo-item-footer {
@@ -250,7 +210,7 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
-  line-height: 31px;
+  line-height: 1.19;
 
   letter-spacing: 0.03em;
   color: #ffffff;
@@ -261,21 +221,20 @@ body {
 /* кнопки */
 
 .buttons {
-  font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 26px;
+  line-height: 1.6;
   text-align: center;
   letter-spacing: 0.03em;
+
   color: #212121;
+  background: #f5f4fa;
 }
 .button {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 26px;
+  line-height: 1.6;
   text-align: center;
   letter-spacing: 0.03em;
   background: #2196f3;
@@ -306,7 +265,7 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  line-height: 36px;
+  line-height: 2;
 
   color: #212121;
   text-decoration: none;
@@ -317,18 +276,13 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 1.9;
 
-  color: #757575;
+  color: var(--secondary-text-color);
 }
 
 .footer {
-  width: 1600px;
-  height: 252px;
-  left: 0px;
-  top: 2094px;
-
-  background: #2f303a;
+  background: var(--background-footer-color);
 }
 ul {
   list-style: none;
